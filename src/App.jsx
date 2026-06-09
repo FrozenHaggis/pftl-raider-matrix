@@ -2,47 +2,64 @@ import { useState } from "react";
 
 const RANKS = [
   {
-    id: "trial",
-    label: "Trial Raider",
-    subtitle: "2–4 week evaluation",
-    color: "#E2704A",
-    glow: "rgba(226,112,74,0.35)",
-    icon: "⚔",
-    description:
-      "The proving ground. Trials earn their spot through performance, attitude, and showing they can follow the guild's culture before it's offered to them.",
-    categories: [
-      {
-        name: "Performance",
-        icon: "📊",
-        items: [
-          "Minimum 50% Warcraft Logs percentile for their role/spec",
-          "Zero avoidable deaths — every wipe reviewed publicly",
-          "Correct consumables every pull: flasks, food, runes",
-          "Sim their character weekly — no excuse for sub-optimal gear",
-        ],
-      },
-      {
-        name: "Attendance & Preparation",
-        icon: "📅",
-        items: [
-          "100% attendance during trial period — no exceptions",
-          "Raid-ready 15 mins before first pull: repaired, stocked, logged in",
-          "Pre-studied all assigned boss tactics before raid night",
-          "Voice comms installed and working — listening is mandatory",
-        ],
-      },
-      {
-        name: "Conduct",
-        icon: "🛡",
-        items: [
-          "Zero complaints or drama during trial — you're being watched",
-          "Accept criticism constructively and implement it immediately",
-          "Never blame others for raid wipes publicly",
-          "Loot Council decisions are final — no complaints or lobbying",
-        ],
-      },
-    ],
-  },
+  id: "trial",
+  label: "Trial Raider",
+  subtitle: "4 consecutive raids — 2 week evaluation",
+  color: "#E2704A",
+  glow: "rgba(226,112,74,0.35)",
+  icon: "⚔",
+  description:
+    "The proving ground. Trials must complete 4 consecutive raid nights across 2 weeks from an agreed start date. The officer team does not want you to fail — support and feedback will be provided throughout. We simply ask you respect our time by applying that feedback constructively. This period is also for you: use it to decide if this guild and community is the right fit for you.",
+  categories: [
+    {
+      name: "Performance",
+      icon: "📊",
+      items: [
+        "Minimum 50% Warcraft Logs percentile for their role/spec",
+        "Zero avoidable deaths — every wipe reviewed publicly",
+        "Correct consumables every pull: flasks, food, runes",
+        "Sim their character weekly — no excuse for sub-optimal gear",
+        "All mandatory addons installed, configured, and operational before first raid",
+      ],
+    },
+    {
+      name: "Attendance",
+      icon: "📅",
+      items: [
+        "Must attend 4 consecutive raids (2 weeks) from an agreed start date",
+        "Missing 1 raid extends your trial by 1 week — officers must be informed at least 24 hours in advance",
+        "Missing a second raid extends your trial by a final additional week",
+        "Raid-ready 15 mins before first pull: repaired, stocked, and logged in",
+        "Voice comms installed and working — listening is mandatory",
+        "Trials who exceed expectations and perform at Raider or Core Raider standard may be fast-tracked. Raiders or Core Raiders who vouch for a trial may also accelerate the process.",
+      ],
+    },
+    {
+      name: "Conduct",
+      icon: "🛡",
+      items: [
+        "Zero complaints or drama during trial — you are being evaluated",
+        "Accept criticism constructively and implement it immediately — officers are investing time in your improvement",
+        "Never blame others for raid wipes publicly",
+        "Loot Council decisions are final — no complaints or lobbying",
+      ],
+    },
+    {
+      name: "Automatic Fails",
+      icon: "🚫",
+      items: [
+        "Missing 3 raids during the trial period under any circumstances",
+        "Failing to notify officers at least 24 hours before a missed raid — including arriving more than 10 minutes late without prior notice",
+        "Signing absent for 3 consecutive raids without prior agreement from an officer",
+        "Arriving without consumables on more than 1 raid night",
+        "Consistently grey parsing, dying more than performing, and showing no improvement after officer feedback",
+        "Repeatedly failing the same assigned mechanic (e.g. missing your kick) after it has been flagged",
+        "Failure to install, configure, or use mandatory addons announced by the Raid Leader",
+        "The Raid Leader has final say on all trial pass and fail decisions — no appeals process exists on the night",
+      ],
+    },
+  ],
+},
   {
     id: "raider",
     label: "Raider",
